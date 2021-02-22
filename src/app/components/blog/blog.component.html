@@ -1,0 +1,15 @@
+<div class="blog">
+    <select id="filtro" (change)="onChange($event)">
+        <option value="todos">Todas las categorías</option>
+        <option [value]="categoria" *ngFor="let categoria of listaCategorias">{{categoria}}</option>
+    </select>
+
+    <div class="post" *ngFor="let post of posts">
+        <h2>{{post.titulo}}</h2>
+        <img [src]="post.imagen">
+        <p>{{post.texto}}</p>
+        <p>{{post.autor}} {{post.fecha}}</p>
+        <p>{{post.categoria}}</p>
+    </div>
+
+</div>

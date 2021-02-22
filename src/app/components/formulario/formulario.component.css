@@ -1,0 +1,19 @@
+form{
+    width: 300px;
+    margin: auto;
+    justify-content: center;
+    padding: 30px;
+    background-color: whitesmoke;
+    border: 1px solid silver;
+    border-radius: 2px;
+    box-shadow: 10px 5px 5px whitesmoke;
+}
+
+div input{
+    width: 300px;
+}
+
+div textarea{
+    width: 300px;
+    border: 1px solid silver;
+}

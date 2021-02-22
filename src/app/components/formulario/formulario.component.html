@@ -1,0 +1,27 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div>
+        <input type="text" placeholder="Título" formControlName="titulo">
+    </div>
+
+    <div>
+        <textarea name="textarea" rows="5" cols="20" placeholder="escribir aquí" formControlName="texto"></textarea>
+    </div>
+
+    <div>
+        <input type="text" placeholder="Autor" formControlName="autor">
+    </div>
+
+    <div>
+        <input type="text" placeholder="Imagen" formControlName="imagen">
+    </div>
+
+    <div>
+        <input type="text" placeholder="Fecha" formControlName="fecha">
+    </div>
+
+    <div>
+        <input type="text" placeholder="Categoría" formControlName="categoria">
+    </div>
+
+    <input type="submit" value="enviar">
+</form>
